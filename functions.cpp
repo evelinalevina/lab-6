@@ -5,15 +5,7 @@
 
 namespace el
 {
-    bool isPrime(int x)
-    {
-        if (x < 2)
-            return false;
-        for (int d = 2; d <= sqrt(x); d++)
-            if (x % d == 0)
-                return false;
-        return true;
-    }
+   
 
     void Read(int& n, int arr[100][100])
     {
@@ -23,19 +15,11 @@ namespace el
                 std::cin >> arr[i][j];
     }
 
-    bool ConsistsPrime(int n, int arr[100][100])
-    {
-
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                if (isPrime(arr[i][j]))
-                    return true;
-        return false;
-    }
+   
 
     void Write(int n, int arr[100][100])
     {
-        std::cout << "Ðåçóëüòàò: " << std::endl;
+        std::cout << "ÃÃ¥Ã§Ã³Ã«Ã¼Ã²Ã Ã²: " << std::endl;
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
