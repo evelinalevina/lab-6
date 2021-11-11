@@ -19,7 +19,7 @@ namespace el
 
     void Write(int n, int arr[100][100])
     {
-        std::cout << "Ðåçóëüòàò: " << std::endl;
+        
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
