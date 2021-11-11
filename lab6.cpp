@@ -4,7 +4,7 @@
 int main()
 {
     setlocale(LC_ALL, "Rus");
-    std::cout << "Введите количество строк и столбцов: ";
+    std::cout << "Введите порядок матрицы: ";
     int n;
     int arr[100][100];
     el::Read(n, arr);
