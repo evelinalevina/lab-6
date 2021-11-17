@@ -82,18 +82,18 @@ namespace el
 
     bool Equal(int n, int arr[100][100]) {
         for (int i = 0; i < n; i++) {
-            int flag_a = 0;
+            int a = 0;
             for (int j = 0; j < n; j++)
             {
-                int flag_b = 1;
+                int b = 1;
                 if (arr[i][j] < 2)
-                    flag_b = 0;
+                    b = 0;
                 for (int d = 2; d <= sqrt(arr[i][j]); d++)
                     if (arr[i][j] % d == 0)
-                        flag_b = 0;
-                if (flag_b == 1)
-                    flag_a = 1;
-                if (flag_a == 1) {
+                        b = 0;
+                if (b == 1)
+                    a = 1;
+                if (a == 1) {
                     return true;
                 }
             }
