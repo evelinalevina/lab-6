@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21.4)
+cmake_minimum_required(VERSION 3.20.2)
 project(lab_6)
 
 set(CMAKE_CXX_STANDARD 14)
